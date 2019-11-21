@@ -12,6 +12,22 @@
   font-size: 20px;
 }
 
+.event-list {
+  max-width: 100%;
+  display: block;
+  margin-top: 10px;
+
+  margin-right: 45px;
+  box-shadow: 0 10px 20px;
+}
+
+.images {
+  margin: 0;
+  width: 50%;
+  height: 50%;
+  object-fit: scale-down;
+}
+
 .event-title {
   font-family: 'Odibee+Sans', sans-serif;
   font-size: 20px;

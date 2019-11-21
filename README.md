@@ -1,4 +1,4 @@
-#Event Lister
+# Event Lister
 
 ## How to Run Event Lister
 
@@ -15,7 +15,8 @@
 
 - Axios
 
-##Issues
+## Issues
+
 The API had a wide range of inconsistencies when it came to looking for an address or location for each event. For this reason, I did not implement a map feature, as there is either:
     - no address but latitude/longitude
     - no latitude/longitude but an address
@@ -23,5 +24,6 @@ The API had a wide range of inconsistencies when it came to looking for an addre
 
 There is no testing in this app.
 
-##Resources
+## Resources
+
 - [Simple Frontend Pagination | React](https://www.youtube.com/watch?v=IYCa1F-OWmk)
