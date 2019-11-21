@@ -1,17 +1,20 @@
 import React from 'react';
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import './App.css';
+import Home from './components/Home';
+import AllEvents from './components/AllEvents';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-       
-      </header>
-    </div>
-  );
+const App = () => {
+  
+    return (
+      <div className="App">
+        <Router>
+            <Route path={"/"} exact component={Home} />
+            <Route path={"/allevents"} exact component={AllEvents} />
+        </Router>
+      </div>
+    );
+  
 }
 
 export default App;
