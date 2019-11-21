@@ -1,6 +1,6 @@
 import React, { useState, useEffect} from 'react';
+import { Link } from 'react-router-dom';
 import axios from 'axios'
-// import EventCard from './EventCard';
 import Pagination from './Pagination';
 import Events from './Events';
 
@@ -32,7 +32,8 @@ const AllEvents = () => {
 
    return (
        <div>
-           <h1>All Events</h1>
+           <h1 className="h1">All Events</h1>
+           <Link to="/">Back to Home Screen</Link>
            <Events events={currentEvents} loading={loading}/>
            <Pagination eventsPerPage={eventsPerPage} totalEvents={events.length} paginate={paginate}/>
        </div>

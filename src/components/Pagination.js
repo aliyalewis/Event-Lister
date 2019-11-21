@@ -11,11 +11,11 @@ const Pagination = ({ eventsPerPage, totalEvents, paginate}) => {
         <nav>
             <ul>
                 {pageNumbers.map(number => (
-                    <li key={number}>
+                    <ul className="ul" key={number}>
                         <a onClick={() => paginate(number)} href="#">
                             {number}
                         </a>
-                    </li>
+                    </ul>
                 ))}
             </ul>
         </nav>
